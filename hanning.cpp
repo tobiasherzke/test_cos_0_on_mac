@@ -1,5 +1,5 @@
 #include "hanning.h"
-float MHAWindow::hanning(float)  
+float MHAWindow::hanning(float x)  
 {
     if( (x < -1) || (x >= 1) )
         return 0;
