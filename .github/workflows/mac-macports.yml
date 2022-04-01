@@ -1,4 +1,4 @@
-name: Test cos of 0 on Mac
+name: Test cos of 0 on Mac with MacPorts
 
 on:
   push:
