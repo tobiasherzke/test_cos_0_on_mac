@@ -1,12 +1,5 @@
-#include "hanning.h"
-float hanning(float x)  
-{
-    return 1;
-}
-float hamming(float x)  
-{
-    return 0.5f;
-}
+#include <algorithm>
+#include <cstdio>
 
 int main(int, char**) {
   float lev_new = 0.00141589157f;
