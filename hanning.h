@@ -1,52 +1,23 @@
-// includes from mha_parser.hh
-#include <string>
-#include <list>
-#include <vector>
-#include <map>
-
-// includes from mha.hh
-#include <stdlib.h>
-#include <cstddef>
-#include <string>
-
-// mha_event_emitter.hh
-#include <list>
-#include <string>
-
-// continued mha_parser.hh
-#include <typeinfo>
-
-// mha_error.hh
-#include <exception>
-
-// mha_signal.hh
-#include <limits>
-#include <string>
+#include <algorithm>
 #include <cmath>
-#include <string>
-#include <iostream>
-#include <sstream>
 #include <complex>
+#include <cstddef>
 #include <cstring>
-
-// mha_os.h
+#include <dlfcn.h>
+#include <exception>
+#include <iostream>
+#include <limits>
 #include <list>
+#include <map>
+#include <netinet/in.h>
+#include <numeric>
+#include <sstream>
 #include <stdint.h>
 #include <stdlib.h>
-#include <dlfcn.h>
-#include <unistd.h>
-#include <netinet/in.h>
 #include <string>
-
-// mha_signal.hh continued
-#include <vector>
-#include <numeric>
-#include <algorithm>
+#include <typeinfo>
 #include <type_traits>
-
-// mha_algo_comm.hh
+#include <unistd.h>
 #include <vector>
-#include <string>
-#include <map>
 
 namespace MHAWindow {float hanning(float);}
