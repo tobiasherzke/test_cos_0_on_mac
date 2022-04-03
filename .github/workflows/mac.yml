@@ -19,6 +19,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Compile and run our test program
       run: |
-           clang++ -Wall -Wextra -Wnon-virtual-dtor -Wformat -Werror -std=c++17 -fPIC -O3 -msse -msse2 -mfpmath=sse -ffast-math -fomit-frame-pointer -fno-finite-math-only -isystem/opt/local/include -Wno-error=unused-command-line-argument -Wimplicit-fallthrough -g -c -o main.o main.cpp
+           clang++ -Wall -Wextra -Wnon-virtual-dtor -Wformat -Werror -std=c++17 -O3 -ffast-math -fomit-frame-pointer -fno-finite-math-only -isystem/opt/local/include -Wno-error=unused-command-line-argument -Wimplicit-fallthrough -g -c -o main.o main.cpp
            clang++ -rpath @executable_path -o a.out main.o -L/opt/local/lib -ldl -lpthread
            ./a.out
