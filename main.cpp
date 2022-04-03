@@ -1,4 +1,12 @@
 #include "hanning.h"
+float hanning(float x)  
+{
+    return 1;
+}
+float hamming(float x)  
+{
+    return 0.5f;
+}
 
 int main(int, char**) {
   float lev_new = 0.00141589157f;
@@ -8,7 +16,7 @@ int main(int, char**) {
   float * buf = new float[1];
   float * results = new float[fragsize];
   std::fill_n(results, fragsize, 0.0f);
-  buf[0] = hanning(x);
+  buf[0] = (random() != 1234) ? 1.0f : 0.567891234f;
   for (unsigned k = 0; k < fragsize; ++k)
     results[k] += buf[0] * lev_new + (1.0f-buf[0]) * lev_old;
   printf("%.9g\n", results[0]);
