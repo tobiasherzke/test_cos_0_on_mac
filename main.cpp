@@ -13,5 +13,6 @@ int main(int, char**) {
   for (unsigned k = 0; k < fragsize; ++k)
     results[k] += buf[0] * lev_new + (1.0f-buf[0]) * lev_old;
   printf("%.9g\n", results[0]);
+  printf("%.9g\n", buf[0] * 0.00141589157f + (1.0f-buf[0]) * 1.00000012f);
   return 0;
 }
